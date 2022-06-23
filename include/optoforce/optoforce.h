@@ -155,6 +155,7 @@ public:
         }
         else{
             ROS_INFO("UNASSIGNED KEY INPUT");
+            keyoptioncu = 3;
         }
     }
     if (keyoptioncu == 1){
@@ -162,7 +163,7 @@ public:
     }else if(keyoptioncu == 2){
             fprintf(stdout, "Fz: %.2f N \r\n", r.status, fz);
     }else{
-            fprintf(stdout, "S:%u SN: %u SC: %u Fx: %.2f Fy: %.2f Fz: %.2f Tx: %.2f Ty: %.2f Tz: %.2f\r\n", r.status, r.sequenceNumber, r.sampleCounter, fx, fy, fz, tx, ty, tz);
+//             fprintf(stdout, "S:%u SN: %u SC: %u Fx: %.2f Fy: %.2f Fz: %.2f Tx: %.2f Ty: %.2f Tz: %.2f\r\n", r.status, r.sequenceNumber, r.sampleCounter, fx, fy, fz, tx, ty, tz);
     }
     keyoptionbf = keyoptioncu;
 
